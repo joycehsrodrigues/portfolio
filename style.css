@@ -481,3 +481,39 @@ p {
         transform: none;
     }
 }
+
+/* Players incorporados na página de audiovisual */
+.project-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.project-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background: #e8f0f8;
+}
+
+.project-video.instagram-video {
+    height: 430px;
+    aspect-ratio: auto;
+    background: #f0f4f8;
+}
+
+.project-info {
+    overflow-wrap: anywhere;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .project-video.instagram-video {
+        height: 400px;
+    }
+}
